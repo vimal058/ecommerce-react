@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ecommerce-react/static/css/main.4d728b96.css",
+    "main.js": "/ecommerce-react/static/js/main.64bb9582.js",
+    "static/media/headphone.jpg": "/ecommerce-react/static/media/headphone.3d88564ab9c462edd39d.jpg",
+    "static/media/Sneakers.jpg": "/ecommerce-react/static/media/Sneakers.44bd581847580b7ef0c5.jpg",
+    "static/media/laptop.jpg": "/ecommerce-react/static/media/laptop.a97e09bd4a3a9dd85322.jpg",
+    "index.html": "/ecommerce-react/index.html",
+    "main.4d728b96.css.map": "/ecommerce-react/static/css/main.4d728b96.css.map",
+    "main.64bb9582.js.map": "/ecommerce-react/static/js/main.64bb9582.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d728b96.css",
+    "static/js/main.64bb9582.js"
+  ]
+}

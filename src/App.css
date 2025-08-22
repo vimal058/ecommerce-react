@@ -1,38 +1,158 @@
-.App {
+/* General */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+h2, h3 {
+  margin: 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: linear-gradient(90deg, #1e3c72, #2a5298);
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ffd700;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* Product Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Product Card */
+.card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+.btn {
+  padding: 8px 15px;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(90deg, #ff5f6d, #ffc371);
+}
+
+/* Button Row */
+.btn-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* Cart Page */
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  margin-bottom: 15px;
+  transition: transform 0.3s;
+}
+
+.cart-item:hover {
+  transform: translateY(-3px);
+}
+
+.cart-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Cart inputs */
+.cart-item input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Checkout */
+form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+form button {
+  width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .cart-item input[type="number"] {
+    width: 100%;
   }
 }
